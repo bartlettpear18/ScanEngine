@@ -1,0 +1,8 @@
+C:\Users\Joel.Bartlett18\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Joel.Bartlett18\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Joel.Bartlett18\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Joel.Bartlett18\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+C:\Users\Joel.Bartlett18\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\Interop.CoreScanner.dll
+C:\Users\Joel.Bartlett18\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.ResolveComReference.cache
+C:\Users\Joel.Bartlett18\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Joel.Bartlett18\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
