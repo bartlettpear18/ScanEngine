@@ -10,6 +10,7 @@ namespace ConsoleApp1
         static CCoreScanner coreScanner;
         static string barcode;
         static Boolean barcodeIsRead = false;
+        int numTests = 5;
 
 
         //Properties for Scanner Object
@@ -59,7 +60,6 @@ namespace ConsoleApp1
             }
         }
 
-        //ignore outliers
         /// <summary>
         /// determines the average execution time for the scan engine
         /// </summary>
@@ -67,12 +67,27 @@ namespace ConsoleApp1
         public double averageRuntime()
         {
             int total = 0;
+            int temp= 0;
+            int denom;
+            int average = 0;
             foreach (int i in runtime)
             {
                 total += i;
             }
 
-            return total / (runtime.Count);
+            //ignore first run as it is inaccurate usually
+            for(int i = 0; i < runtime.Count; i += (numTests-1))
+            {
+                total -= (int) runtime[i];
+                temp++;
+            }
+            denom = runtime.Count - temp;
+            if(denom <= 0)
+            {
+                average = total / temp;
+            }
+
+            return average;
         }
 
         /// <summary>
@@ -191,22 +206,17 @@ namespace ConsoleApp1
 
             watch.Stop();
             int elapsedMs = (int) watch.ElapsedMilliseconds;
-            addConsistency(1);
             addRuntime(elapsedMs);
-            Console.WriteLine(elapsedMs);
-            //Console.WriteLine(barcode);
+            Console.WriteLine(barcode);
 
         }
 
         //Run tests on scan engine
         public void runTests()
         {
-
-            int numTests = 5;
             for (int i = 0; i < numTests; i++)
             {
                 scan();
-                System.Threading.Thread.Sleep(1000);
             }
         }
 
